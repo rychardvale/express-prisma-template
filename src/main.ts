@@ -5,7 +5,7 @@ import helmet from "helmet"
 
 import { AuthRoutes } from "./auth/auth.routes"
 import AppConfig from "./common/app.config"
-import { UserRoutes } from "./user/user.routes"
+import { UserRoutes } from "./users/users.routes"
 
 const app = express();
 const httpServer = http.createServer(app);
