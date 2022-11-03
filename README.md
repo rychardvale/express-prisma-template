@@ -7,7 +7,7 @@ This is a template that I like to use when building a backend with pure expressj
 -   Typescript
 -   Prisma
 -   Express
--   Basic Authentication 
+-   Basic Authentication
 
 ### Todo:
 
@@ -15,6 +15,7 @@ This is a template that I like to use when building a backend with pure expressj
 -   [ ] Procedural version branch
 -   [ ] [tRPC](https://github.com/trpc/trpc) version branch
 -   [ ] Tests
+-   [ ] Error handling for zod
 -   [ ] Logging
     -   [ ] Show loaded routes
     -   [ ] Debug info
