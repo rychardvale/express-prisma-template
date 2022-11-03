@@ -10,7 +10,7 @@
     },
     "keywords": ["express", "template", "prisma"],
     "author": "Rychard Vale <rychard.vale@gmail.com>",
-    "license": "SEE LICENSE IN LICENSE.md",
+    "license": "MIT",
     "dependencies": {
         "@prisma/client": "^4.5.0",
         "bcrypt": "^5.1.0",
