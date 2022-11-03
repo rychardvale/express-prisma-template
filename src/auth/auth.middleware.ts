@@ -1,8 +1,8 @@
 import e from "express";
 import { z } from "zod";
 import { HttpStatus, IJwtPayload, ResponseWithCredentials } from "../ts/types";
-import { createUserDto } from "../user/user.schemas";
-import userService from "../user/user.service";
+import { createUserDto } from "../users/users.schemas";
+import userService from "../users/users.service";
 import { AuthConstants } from "./auth.constants";
 import authService from "./auth.service";
 

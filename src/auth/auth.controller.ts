@@ -1,7 +1,7 @@
 import e from "express";
 import { HttpStatus, ResponseWithUser } from "../ts/types";
-import { createUserDto } from "../user/user.schemas";
-import UserService from "../user/user.service";
+import { createUserDto } from "../users/users.schemas";
+import UserService from "../users/users.service";
 import { AuthConstants } from "./auth.constants";
 import AuthService from "./auth.service";
 

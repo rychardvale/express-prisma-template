@@ -1,5 +1,5 @@
 import PrismaService from "../common/prisma.service";
-import { CreateUserDto } from "./user.schemas";
+import { CreateUserDto } from "./users.schemas";
 
 class UserService {
     private readonly prisma = PrismaService;
