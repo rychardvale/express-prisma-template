@@ -19,14 +19,12 @@ class AuthService {
         });
     }
 
-    verifyJwt<T>(
-        token: string
-    ): { payload: T; error: null } | { payload: null; error: any } {
+    verifyJwt<T>(token: string) {
         try {
             const payload = jwt.verify(token, this.config.JWT_SECRET) as T;
-            return { payload, error: null };
+            return { payload, error: undefined };
         } catch (e) {
-            return { payload: null, error: e };
+            return { payload: undefined, error: e as Error };
         }
     }
 

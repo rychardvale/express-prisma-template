@@ -9,6 +9,7 @@ export type ResponseWithCredentials = express.Response & {
         };
     };
 };
+
 export type ResponseWithUser = ResponseWithCredentials & {
     locals: {
         user: Omit<User, "hashedPassword">;

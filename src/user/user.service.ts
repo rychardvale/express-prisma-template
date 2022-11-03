@@ -16,6 +16,19 @@ class UserService {
         });
     }
 
+    async getById(id: string) {
+        return this.prisma.user.findUnique({
+            where: {
+                id,
+            },
+            select: {
+                id: true,
+                email: true,
+                sessionVersion: true,
+            },
+        });
+    }
+
     async getByEmail(email: string) {
         return this.prisma.user.findUnique({
             where: {
@@ -39,6 +52,19 @@ class UserService {
                 id: true,
                 sessionVersion: true,
                 hashedPassword: true,
+            },
+        });
+    }
+
+    async incrementUserSessionVersion(id: string) {
+        await this.prisma.user.update({
+            where: {
+                id,
+            },
+            data: {
+                sessionVersion: {
+                    increment: 1,
+                },
             },
         });
     }

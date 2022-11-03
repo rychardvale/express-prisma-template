@@ -15,6 +15,10 @@ export class AuthRoutes extends RouteConfig {
                 AuthMiddleware.validateSignInBody,
                 AuthMiddleware.getUserFromCredentials,
                 AuthController.handleLogin
+            ).delete(
+                AuthMiddleware.extractJwtPayloadFromCookie,
+                AuthController.handleSignOut
+
             );
         this.app
             .route("/auth/register")
