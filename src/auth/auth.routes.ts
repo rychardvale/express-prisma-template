@@ -16,7 +16,7 @@ export class AuthRoutes extends RouteConfig {
                 AuthMiddleware.getUserFromCredentials,
                 AuthController.handleLogin
             ).delete(
-                AuthMiddleware.extractJwtPayloadFromCookie,
+                AuthMiddleware.extractUserFromJwt,
                 AuthController.handleSignOut
 
             );

@@ -15,7 +15,7 @@ class AuthMiddleware {
      * Checks if JWT is in cookies. Parse it and fetches the user.
      * Appends the user data to Express.Response.locals.user
      */
-    async extractJwtPayloadFromCookie(
+    async extractUserFromJwt(
         req: e.Request,
         res: e.Response,
         next: e.NextFunction
