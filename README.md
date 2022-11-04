@@ -1,6 +1,6 @@
 # Express with Prisma
 
-This is a template that I like to use when building a backend with pure expressjs. It helps to keep my code organized and easily tested.
+**W.I.P.** This is a template that I like to use when building a backend with pure expressjs. It helps to keep my code organized and easily tested.
 
 ### Features:
 
